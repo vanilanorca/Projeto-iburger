@@ -1,0 +1,745 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Mono', monospace, Arial, Helvetica, sans-serif;
+} 
+
+
+body {
+    background: rgb(24, 2, 2);
+}
+
+header {
+    align-items: center;
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.589) 100%, transparent), url(./imagens/burger-gif.gif);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    border-bottom: 2px solid rgb(19, 2, 2);
+    box-shadow: 0px .5px 30px rgb(53, 45, 45);
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    background: rgb(82, 17, 17);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+    
+}
+
+.menu a {
+    color: rgb(246, 253, 138);
+    display: block;
+    border-radius: 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+    animation: menu 1.8s;
+    font-size: 20px;
+    
+}
+
+.menu a:active,
+.menu a:hover {
+    background: rgb(246, 253, 138);
+    color: rgb(37, 0, 0);
+    transition: .5s;
+}
+
+@keyframes menu {
+    0% {transform: translateY(-100px);};
+    100% {transform: translateY();}
+}
+
+.title,
+.subtitle {
+    color: rgb(246, 253, 138);
+    letter-spacing: 5px;
+    text-align: center;
+    text-shadow: 6px 10px 5px rgb(32, 7, 7);
+}
+
+.title {
+    font-size: 60px;
+    font-family: 'Comic Neue', cursive;
+    animation: titulo 2s;
+}
+
+.subtitle {
+    font-family: 'Indie Flower', cursive;
+    font-size: 14px;
+    animation: subtitulo 2s;
+}
+
+@keyframes titulo {
+    0% {
+        transform: translatex(-500px) translateY(-100px);
+        opacity: 0;
+    };
+    100% {
+        transform: translateY();
+    }
+}
+
+@keyframes subtitulo {
+    0% {
+        transform: translatex(500px) translateY(100px);
+        opacity: 0;
+    };
+    100% {
+        transform: translateY();
+    }
+}
+
+@media (min-width: 800px) {
+
+    .title {
+        font-size: 50px;
+    }
+
+    .subtitle {
+        font-size: 30px;
+    }
+
+    .menu a {
+        font-size: 20px;
+        padding: 10px 80px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .title {
+        font-size: 70px;
+    }
+
+    .subtitle {
+        font-size: 35px;
+    }
+
+    .menu a {
+        font-size: 20px;
+        padding: 15px 115px;
+    }
+}
+
+.promocao {
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.322) 99%, transparent 1%), url(./imagens/lanche-frontend.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 85vw;
+    height: 200px;
+    border-radius: 20px;
+    border: 1.2px solid black;
+    box-shadow: 6px 6px 15px rgb(129, 136, 32);
+    margin: 40px auto;
+    margin-bottom: -20px;
+
+}
+
+.promo-content {
+    position: relative;
+    height: 80%;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 50%;
+    text-align: center;
+    color: white;
+}
+
+.promo-content h1{
+    animation: promo 2s infinite ease-in-out both;
+    font-size: 30px;
+    margin-bottom: 20px
+}
+
+.promo-content h2{
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.promo-content h2 b{
+    animation: preco 2s infinite;
+}
+
+@keyframes preco {
+    0%{}
+    50%{
+        color: #00d111;
+        transform: scale(10);
+    }
+    100%{}
+}
+
+
+.promo-cardapio {
+    margin-top: 100px;
+}
+
+.header-promo {
+    margin-top: 60px;
+    margin-bottom: 90px;
+}
+
+@keyframes promo {
+    0%{}
+    25%{
+        color: yellow;
+    }
+    50%{
+        transform: rotate(2deg) scale(1.1);
+        color: rgb(230, 105, 105);
+    }
+    75% {
+        color: yellow
+    }
+    100% {
+        transform: none;
+        color: rgb(230, 105, 105);
+    }
+}
+
+
+
+@media (min-width: 800px){
+    .promocao{
+        height: 300px;
+    }
+    
+    .promo-content h1{
+        margin-top: 30px;
+        font-size: 40px;
+    }
+
+    .promo-content h2 {
+        margin-top: 50px;
+        font-size: 23px;
+    }
+}
+
+@media (min-width: 1200px){
+    .promo-content{
+        height: 350px;
+    }
+
+    .promo-content h1{
+        margin-top: 50px;
+        font-size: 50px;
+    }
+
+    .promo-content h2 {
+        font-size: 27px;
+    }
+}
+
+@media (min-width: 1500px){
+    .promocao{
+        height: 450px;
+    }
+    .promo-content h1{
+        margin-top: 70px;
+        font-size: 75px;
+    }
+    .promo-content h2 {
+        font-size: 30px;
+        margin-top: 80px
+    }
+}
+
+
+
+.cardapio {
+    padding: 2em;
+}
+
+.carrinho h2,
+.cardapio h2 {
+    text-align: center;
+    font-size: 40px;
+    color: whitesmoke;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+
+.cardapio .img-cardapio {
+    border-radius: 15px;
+    width: 80vw;
+    height: 300px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.cardapio .img-cardapio:active,
+.cardapio .img-cardapio:hover {
+    transform: scale(1.1) rotate(2deg);
+    transition: .3s;
+}
+
+
+.cardapio figure {
+    text-align: center;
+    color: rgb(237, 241, 176);
+    font-size: 23px;
+}
+
+.cardapio .grid {
+    display: grid;
+    gap: 5em;
+}
+
+
+@media (min-width: 800px) {
+    .cardapio .img-cardapio {
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+        width: 350px;
+    }
+
+    .cardapio .grid {
+        grid-template-columns: 350px 350px;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cardapio .grid {
+        grid-template-columns: 350px 350px;
+    }
+
+}
+
+
+hr {
+    width: 80vw;
+    margin: auto;
+}
+
+.lanches a{
+    color: rgb(61, 6, 6);
+}
+
+.lanches-menu {
+    padding: 20px;
+    background: rgb(249, 255, 171);
+    color: rgb(61, 6, 6);
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 85vw;
+    margin: 50px auto;
+    box-shadow: 5px 5px 10px rgb(156, 152, 152);
+}
+
+.bloco {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.lanches h1 {
+    font-size: 30px;
+}
+
+.lanches h2 {
+    font-size: 20px;
+}
+
+.bloco h3 {
+    font-size: 23px;
+    margin-top: 20px ;
+}
+
+.lanches-menu hr {
+    position: relative;
+    width: 95%;
+    height: 4px;
+    background: black;
+}
+
+@media (min-width: 800px){
+    .lanches h1 {
+        font-size: 35px;
+    }
+    
+    .lanches h2 {
+        font-size: 25px;
+    }
+
+    .lanches p {
+        font-size: 18px;
+    }
+    
+}
+
+@media (min-width: 1200px){
+    .lanches p {
+        font-size: 20px;
+    }    
+}
+
+
+@media (min-width: 800px){
+    footer {
+        height: 70px;
+        font-size: 18px;
+        background: #eee;
+        text-align: center;
+        padding-top: 10px ;
+    }
+
+    .bloco h3 {
+        text-align: right;
+    }
+}
+
+.back {
+    margin: 250px auto;
+    margin-bottom: 50px;
+    width: 30px;
+    height: 30px;
+    border-left: 2px solid whitesmoke;
+    border-top: 2px solid whitesmoke;
+    transform: rotate(45deg);
+} 
+
+.back-2{
+    margin: 50px auto;
+    margin-bottom: 50px;
+    width: 30px;
+    height: 30px;
+    border-left: 2px solid whitesmoke;
+    border-top: 2px solid whitesmoke;
+    transform: rotate(45deg);
+}
+
+.carrinho-grid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 1em;
+    height: 500px;
+    justify-content: space-evenly;
+}
+
+.carrinho-container h2{
+    color: rgb(82, 17, 17);
+    font-size: 25px;
+    background: rgb(240, 243, 198);
+    border: 1px solid black;
+    border-radius:20px;
+    padding: 10px;
+}
+
+.carrinho-container hr {
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 80px;
+    height: 5px;
+    background: black;
+}
+
+.carrinho-title {
+    background: transparent;
+    font-size: 35px;
+}
+
+.inputs{
+    margin-top: 20px;
+    text-align:left;
+    font-size: 20px;
+}
+
+.pagamento input{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.pagamento h1{
+    margin-top: -50px;
+}
+
+.total h2{
+    text-align: left;
+    font-size: 28px;
+}
+
+@media (min-width: 800px){
+    .carrinho-container h2{
+        font-size: 32px;
+    }
+
+    .carrinho-grid {
+        grid-template-columns: 450px 200px;
+        gap: 2em;
+        height: 500px;
+    }
+    
+    .total h2{
+        text-align: left;
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 1200px){
+    .carrinho-container h2{
+        font-size: 32px;
+    }
+
+    .carrinho-grid {
+        grid-template-columns: 600px 250px;
+        gap: 2em;
+        height: 500px;
+    }
+    
+    .total h2{
+        text-align: left;
+        font-size: 32px;
+        height: 80px;
+    }
+}
+
+<<<<<<< HEAD
+=======
+.pedir {
+    background: rgb(235, 248, 52);
+    border: 1px solid black;
+    border-radius: 20px;
+    color: black;
+    font-size: 28px;
+    padding-top: 8px;
+    text-align: center;
+    width: 300px;
+    height: 60px;
+    margin: 10px auto;
+    font-weight: bold;
+}
+
+.pedir:active,
+.pedir:hover{
+    box-shadow: 0px 0px 10px red, 0px 0px 20px white;
+    transform: translateY(10px);
+    transition: .5s;
+}
+
+
+
+
+
+
+
+
+
+
+.promocao {
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.322) 99%, transparent 1%), url(./imagens/promocao.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 85vw;
+    height: 200px;
+    border-radius: 20px;
+    border: 1.2px solid black;
+    box-shadow: 6px 6px 15px rgb(129, 136, 32);
+    margin: 40px auto;
+    margin-bottom: -20px;
+
+}
+>>>>>>> parent of a2d1a00... melhoria de semantica do css
+
+.pedir a{
+    position: absolute;
+    background: rgb(11, 145, 18);
+    color: white;
+    font-size: 18px;
+    padding: 30px 50px;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    overflow: hidden;
+    border-radius: 10px;
+    text-shadow: 3px 3px 3px black;
+}
+
+<<<<<<< HEAD
+@media (min-width: 800px){
+    .pedir a{
+        font-size: 28px;
+    }
+=======
+.promocao .promo-content h1{
+    animation: promocao 2s infinite ease-in-out both;
+    font-size: 30px;
+    margin-bottom: 20px
+}
+
+.promocao .promo-content h2{
+    color: whitesmoke;
+    font-size: 20px;
+>>>>>>> parent of a2d1a00... melhoria de semantica do css
+}
+
+<<<<<<< HEAD
+.pedir a span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-image: linear-gradient(to right, transparent, rgb(235, 248, 52));
+    animation: animate1 2s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform:translateX(100%);
+    }
+}
+
+.pedir a span:nth-child(2){
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-image: linear-gradient(to bottom, transparent, rgb(235, 248, 52));
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+}
+<<<<<<< HEAD
+@keyframes animate2{
+    0%{
+        transform: translateY(-100%);
+=======
+
+=======
+>>>>>>> parent of 35e8254... add icons on .menu a
+@keyframes promocao {
+    0%{}
+    25%{
+        color: yellow;
+>>>>>>> parent of a2d1a00... melhoria de semantica do css
+    }
+    100%{
+        transform:translateY(100%);
+    }
+}
+
+<<<<<<< HEAD
+.pedir a span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 4px;
+    background-image: linear-gradient(to left, transparent, rgb(235, 248, 52));
+    animation: animate3 2s linear infinite;
+}
+@keyframes animate3{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform:translateX(-100%);
+    }
+}
+
+.pedir a span:nth-child(4){
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-image: linear-gradient(to top, transparent, rgb(235, 248, 52));
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate4{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform:translateY(-100%);
+=======
+
+
+@media (min-width: 800px){
+    .promocao{
+        height: 300px;
+    }
+    
+    .promocao .promo-content h1{
+        margin-top: 30px;
+        font-size: 40px;
+    }
+
+    .promocao .promo-content h2 {
+        margin-top: 50px;
+        font-size: 23px;
+    }
+}
+
+@media (min-width: 1200px){
+    .promocao{
+        height: 350px;
+    }
+
+    .promocao .promo-content h1{
+        margin-top: 50px;
+        font-size: 50px;
+    }
+
+    .promocao .promo-content h2 {
+        font-size: 27px;
+>>>>>>> parent of a2d1a00... melhoria de semantica do css
+    }
+}
+
+
+
+
+.pedir:active,
+.pedir:hover{
+    box-shadow: 0px 0px 20px red, 0px 0px 20px white;
+    transform: translateY(3px);
+    transition: .5s;
+}
+
+
+
+footer {
+    height: 50px;
+    width: 100vw;
+    font-size: 13.5px;
+    background: #eee;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
