@@ -31,6 +31,7 @@ a {
     position: fixed;
     top: 0;
     width: 100vw;
+    z-index: 1;
 }
 
 .menu ul {
@@ -47,11 +48,11 @@ a {
     color: rgb(246, 253, 138);
     display: block;
     border-radius: 20px;
-    padding: 10px 30px;
+    padding: 10px 25px;
     text-decoration: none;
     animation: menu 1.8s;
     font-size: 20px;
-    
+    text-align: center;
 }
 
 .menu a:active,
@@ -246,20 +247,6 @@ a {
     }
 }
 
-@media (min-width: 1500px){
-    .promocao{
-        height: 450px;
-    }
-    .promo-content h1{
-        margin-top: 70px;
-        font-size: 75px;
-    }
-    .promo-content h2 {
-        font-size: 30px;
-        margin-top: 80px
-    }
-}
-
 
 
 .cardapio {
@@ -361,11 +348,6 @@ hr {
     font-size: 20px;
 }
 
-.bloco h3 {
-    font-size: 23px;
-    margin-top: 20px ;
-}
-
 .lanches-menu hr {
     position: relative;
     width: 95%;
@@ -385,15 +367,28 @@ hr {
     .lanches p {
         font-size: 18px;
     }
-    
 }
 
 @media (min-width: 1200px){
     .lanches p {
         font-size: 20px;
-    }    
+    }
 }
 
+.lanches h2 div{
+    text-align: right;
+    float: right;
+}
+
+
+footer {
+    height: 50px;
+    width: 100vw;
+    font-size: 13.5px;
+    background: #eee;
+    text-align: center;
+    padding-top: 10px;
+}
 
 @media (min-width: 800px){
     footer {
@@ -402,10 +397,6 @@ hr {
         background: #eee;
         text-align: center;
         padding-top: 10px ;
-    }
-
-    .bloco h3 {
-        text-align: right;
     }
 }
 
@@ -460,21 +451,6 @@ hr {
     font-size: 35px;
 }
 
-.inputs{
-    margin-top: 20px;
-    text-align:left;
-    font-size: 20px;
-}
-
-.pagamento input{
-    margin-top: 10px;
-    margin-right: 10px;
-}
-
-.pagamento h1{
-    margin-top: -50px;
-}
-
 .total h2{
     text-align: left;
     font-size: 28px;
@@ -515,58 +491,12 @@ hr {
     }
 }
 
-<<<<<<< HEAD
-=======
-.pedir {
-    background: rgb(235, 248, 52);
-    border: 1px solid black;
-    border-radius: 20px;
-    color: black;
-    font-size: 28px;
-    padding-top: 8px;
-    text-align: center;
-    width: 300px;
-    height: 60px;
-    margin: 10px auto;
-    font-weight: bold;
-}
-
-.pedir:active,
-.pedir:hover{
-    box-shadow: 0px 0px 10px red, 0px 0px 20px white;
-    transform: translateY(10px);
-    transition: .5s;
-}
-
-
-
-
-
-
-
-
-
-
-.promocao {
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.322) 99%, transparent 1%), url(./imagens/promocao.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 85vw;
-    height: 200px;
-    border-radius: 20px;
-    border: 1.2px solid black;
-    box-shadow: 6px 6px 15px rgb(129, 136, 32);
-    margin: 40px auto;
-    margin-bottom: -20px;
-
-}
->>>>>>> parent of a2d1a00... melhoria de semantica do css
 
 .pedir a{
     position: absolute;
     background: rgb(11, 145, 18);
-    color: white;
-    font-size: 18px;
+    color: black;
+    font-size: 28px;
     padding: 30px 50px;
     margin-top: 5px;
     margin-bottom: 60px;
@@ -575,28 +505,8 @@ hr {
     font-weight: bold;
     overflow: hidden;
     border-radius: 10px;
-    text-shadow: 3px 3px 3px black;
 }
 
-<<<<<<< HEAD
-@media (min-width: 800px){
-    .pedir a{
-        font-size: 28px;
-    }
-=======
-.promocao .promo-content h1{
-    animation: promocao 2s infinite ease-in-out both;
-    font-size: 30px;
-    margin-bottom: 20px
-}
-
-.promocao .promo-content h2{
-    color: whitesmoke;
-    font-size: 20px;
->>>>>>> parent of a2d1a00... melhoria de semantica do css
-}
-
-<<<<<<< HEAD
 .pedir a span:nth-child(1){
     position: absolute;
     top: 0;
@@ -625,26 +535,15 @@ hr {
     animation: animate2 2s linear infinite;
     animation-delay: 1s;
 }
-<<<<<<< HEAD
 @keyframes animate2{
     0%{
         transform: translateY(-100%);
-=======
-
-=======
->>>>>>> parent of 35e8254... add icons on .menu a
-@keyframes promocao {
-    0%{}
-    25%{
-        color: yellow;
->>>>>>> parent of a2d1a00... melhoria de semantica do css
     }
     100%{
         transform:translateY(100%);
     }
 }
 
-<<<<<<< HEAD
 .pedir a span:nth-child(3){
     position: absolute;
     bottom: 0;
@@ -679,38 +578,6 @@ hr {
     }
     100%{
         transform:translateY(-100%);
-=======
-
-
-@media (min-width: 800px){
-    .promocao{
-        height: 300px;
-    }
-    
-    .promocao .promo-content h1{
-        margin-top: 30px;
-        font-size: 40px;
-    }
-
-    .promocao .promo-content h2 {
-        margin-top: 50px;
-        font-size: 23px;
-    }
-}
-
-@media (min-width: 1200px){
-    .promocao{
-        height: 350px;
-    }
-
-    .promocao .promo-content h1{
-        margin-top: 50px;
-        font-size: 50px;
-    }
-
-    .promocao .promo-content h2 {
-        font-size: 27px;
->>>>>>> parent of a2d1a00... melhoria de semantica do css
     }
 }
 
@@ -726,14 +593,7 @@ hr {
 
 
 
-footer {
-    height: 50px;
-    width: 100vw;
-    font-size: 13.5px;
-    background: #eee;
-    text-align: center;
-    padding-top: 10px;
-}
+
 
 
 
