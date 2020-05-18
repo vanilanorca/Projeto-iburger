@@ -380,16 +380,6 @@ hr {
     float: right;
 }
 
-
-footer {
-    height: 50px;
-    width: 100vw;
-    font-size: 13.5px;
-    background: #eee;
-    text-align: center;
-    padding-top: 10px;
-}
-
 @media (min-width: 800px){
     footer {
         height: 70px;
@@ -456,6 +446,23 @@ footer {
     font-size: 28px;
 }
 
+.pagamento h3{
+    margin-top: 60px;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+.pagamento-metodos{
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.pagamento input {
+    margin-bottom: 15px;
+}
+
 @media (min-width: 800px){
     .carrinho-container h2{
         font-size: 32px;
@@ -470,6 +477,16 @@ footer {
     .total h2{
         text-align: left;
         font-size: 32px;
+    }
+
+    .pagamento h3{
+        font-size: 30px;
+    }
+
+    .pagamento-metodos{
+        margin-left: 50%;
+        transform: translate(-50%);
+        width: 230px
     }
 }
 
@@ -589,6 +606,15 @@ footer {
     box-shadow: 0px 0px 20px red, 0px 0px 20px white;
     transform: translateY(3px);
     transition: .5s;
+}
+
+footer {
+    height: 50px;
+    width: 100vw;
+    font-size: 13.5px;
+    background: #eee;
+    text-align: center;
+    padding-top: 10px;
 }
 
 
