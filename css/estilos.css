@@ -12,7 +12,7 @@ body {
 
 header {
     align-items: center;
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.589) 100%, transparent), url(./imagens/burger-gif.gif);
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.589) 100%, transparent), url(../imagens/burger-gif.gif);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -139,7 +139,7 @@ a {
 }
 
 .promocao {
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.322) 99%, transparent 1%), url(./imagens/lanche-frontend.jpg);
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.322) 99%, transparent 1%), url(../imagens/lanche-frontend.jpg);
     background-size: cover;
     background-position: center;
     width: 85vw;
@@ -616,7 +616,6 @@ footer {
     text-align: center;
     padding-top: 10px;
 }
-
 
 
 

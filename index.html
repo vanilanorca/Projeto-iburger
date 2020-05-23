@@ -7,7 +7,7 @@
     <meta name="author" content="Vinicius Lopes Alves">
     <title>iBurger</title>
 
-    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="./css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=DM+Mono&family=Indie+Flower&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bb176450ad.js" crossorigin="anonymous"></script>
 </head>
@@ -18,9 +18,9 @@
 
         <nav class="menu">
             <ul>
-                <li><a href="#header"><i class="fas fa-home"></i><br>Home</a></li>
-                <li><a href="#cardapio"><i class="fas fa-book-open"></i><br></vr>Cardápio</a></li>
-                <li><a href="#carrinho"><i class="fas fa-shopping-cart"></i><br>Carrinho</a></li>
+                <li><a href="#header" class="scroll-page"><i class="fas fa-home"></i><br>Home</a></li>
+                <li><a href="#cardapio" class="scroll-page"><i class="fas fa-book-open"></i><br></vr>Cardápio</a></li>
+                <li><a href="#carrinho" class="scroll-page"><i class="fas fa-shopping-cart"></i><br>Carrinho</a></li>
             </ul>
         </nav>
 
@@ -55,22 +55,22 @@
                 
 
                 <figure>
-                    <a href="#lanches"><img class="img-cardapio" src="./imagens/hamburguer.jpg" alt="#"></a>
+                    <a href="#lanches" class="scroll-page"><img class="img-cardapio" src="./imagens/hamburguer.jpg" alt="#"></a>
                     <figcaption>Lanches</figcaption>
                 </figure>
 
                 <figure>
-                    <a href="#acompanhamentos"><img class="img-cardapio" src="./imagens/fritas.jpg" alt="#"></a>
+                    <a href="#acompanhamentos" class="scroll-page"><img class="img-cardapio" src="./imagens/fritas.jpg" alt="#"></a>
                     <figcaption>Acompanhamentos</figcaption>
                 </figure>
 
                 <figure>
-                    <a href="#bebidas"><img class="img-cardapio" src="./imagens/bebidas.jpg" alt="#"></a>
+                    <a href="#bebidas" class="scroll-page"><img class="img-cardapio" src="./imagens/bebidas.jpg" alt="#"></a>
                     <figcaption>Bebidas</figcaption>
                 </figure>
 
                 <figure>
-                    <a href="#sobremesas"><img class="img-cardapio" src="./imagens/sobremesas.jpg" alt="#"></a>
+                    <a href="#sobremesas" class="scroll-page"><img class="img-cardapio" src="./imagens/sobremesas.jpg" alt="#"></a>
                     <figcaption>Sobremesas</figcaption>
                 </figure>
 
@@ -97,7 +97,7 @@
                 
                 <div class="bloco">
                     <h2>Hamburguer Back-End:</h2>
-                    <p>1 hamburguer bovino, queijo prato, tomate, molho especial, bacon, milho, salada e pão</p>
+                    <p>1 hamburguer bovino, queijo prato, tomate, molho especial, bacon, salada e pão</p>
                     <div><h3>R$ 19,90 
                         <a href="#"><i class="fas fa-plus-circle"></i></a>
                         <a href="#"><i class="fas fa-minus"></i></a></div></h3>
@@ -207,7 +207,7 @@
             </div>
         </section>
 
-        <a href="#header"><div class="back-2"></div></a>
+        <a href="#header" class="scroll-page"><div class="back-2"></div></a>
 
         <hr id="carrinho">
 
@@ -245,7 +245,7 @@
             </div>
             
             <div class="pedir">
-                <a href="#">
+                <a href="#" >
                     <span></span>
                     <span></span>
                     <span></span>
@@ -259,13 +259,17 @@
 
         </section>
 
-        <a href="#header"><div class="back"></div></a>
+        <a href="#header" class="scroll-page"><div class="back"></div></a>
          
         <footer>
             iBurguer - &copy; Copyright 2020<br>
             Developed by Vinicius Lopes Alves 
         </footer>
 
+
+
+        <script src="./js/jquery.min.js" type="text/javascript"></script>
+        <script src="./js/main.js" type="text/javascript"></script>
 </body>
 </html>
 
