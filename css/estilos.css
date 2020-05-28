@@ -367,6 +367,14 @@ hr {
     .lanches p {
         font-size: 18px;
     }
+
+    footer {
+        height: 70px;
+        font-size: 18px;
+        background: #eee;
+        text-align: center;
+        padding-top: 10px ;
+    }
 }
 
 @media (min-width: 1200px){
@@ -380,15 +388,15 @@ hr {
     float: right;
 }
 
-@media (min-width: 800px){
-    footer {
-        height: 70px;
-        font-size: 18px;
-        background: #eee;
+@media (min-width: 1600px){
+    .lanches-menu .bloco{
         text-align: center;
-        padding-top: 10px ;
     }
-}
+
+    .lanches-menu{
+        width: 800px;
+    }
+}              
 
 .back {
     margin: 250px auto;
