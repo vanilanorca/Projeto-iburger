@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(to bottom, rgb(24, 2, 2) 50%, rgb(61, 11, 11));
+    color: rgb(247, 253, 138);
+    height: 100vh;
+}
+
+.logo img{
+    display: block;
+    margin: 10px auto;
+    animation: imagem 2s;
+}
+@keyframes imagem{
+    0%{transform: translateY(-100%)};
+    100%{transform: translateY(100%)}
+}
+
+.logo h1{
+    text-align: center;
+    font-family: 'DM Mono', cursive;
+    font-size: 50px;
+    margin-top: -50px;
+    text-shadow: 1px 1px 5px rgb(170, 54, 54);
+    animation: titulo 2s;
+}
+@keyframes titulo{
+    0%{transform: translateX(-100%)};
+    100%{transform: translateX(100%)}
+}
+
+
+.main-form{
+    background: rgb(70, 15, 15);
+    border: 1px solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(100, 55, 55);
+    display: flex;
+    padding: 15px;
+    width: 350px;
+    margin: 50px auto;
+    animation: formulario 2s;
+}
+@keyframes formulario{
+    0%{transform: translateX(200%)};
+    100%{transform: translateX(100%)}
+}
+
+.main-form h2{
+    position: relative;
+    text-align: center;
+}
+
+.main-form form{
+    padding: 30px 20px;
+}
+
+.main-form label{
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+
+.main-form input{
+    background: rgb(194, 199, 106);
+    border: 1px solid  rgb(24, 2, 2);
+    border-radius: 5px;
+    font-family: 'DM Mono', cursive;
+    color: black;
+    padding: 5px;
+    height: 20px;
+    margin-bottom: 20px;
+    margin-top: 3px;
+    width: 300px;
+}
+.main-form input:focus{
+    box-shadow: 3px 3px 5px rgb(116, 85, 85);
+}
+
+.entrar{
+    background:rgb(24, 180, 10);
+    border: 1px solid black;
+    border-radius: 20px;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-left: calc(50% - 125px);
+    margin-top: 10px;
+    padding: 7px 35px;
+    width: 250px;
+    cursor: pointer;    
+}
+
+.facebook{
+    background-color: #3b5998;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+    margin: 0 auto;
+    margin-left: calc(50% - 125px);
+    margin-top: 10px;
+    padding: 7px 0;
+    width: 250px;
+    cursor: pointer;
+}
+.facebook i{
+    margin-right: 15px;
+}
+
+.facebook:hover, .facebook:active{
+    background-color: #213155;
+    box-shadow: 0 0 5px white;
+    transition: .3s;
+}
+
+.entrar:hover, .entrar:active{
+    background:rgb(25, 114, 17);
+    box-shadow: 0 0 5px white;
+    transition: .3s;
+}
+
