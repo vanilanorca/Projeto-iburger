@@ -6,26 +6,32 @@
 } 
 
 html{
-    background: rgb(43, 5, 5);
+    
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    
 }
 
 body{
+    background-image: linear-gradient(to bottom, rgb(49, 6, 6), rgb(104, 12, 12));
     color: rgb(247, 253, 138);
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    height: 100vh;
 }
 
 .content{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%
 }
 
 .logo img{
     display: block;
-    animation: imagem 2s;
+    /* animation: imagem 2s; */
 }
 @keyframes imagem{
     0%{transform: translateY(-100%)};
@@ -39,7 +45,7 @@ body{
     margin-bottom: 50px;
     font-size: 50px;
     text-shadow: 1px 1px 5px rgb(170, 54, 54);
-    animation: titulo 2s;
+    /* animation: titulo 2s; */
 }
 @keyframes titulo{
     0%{transform: translateX(-100%)};
@@ -57,7 +63,7 @@ body{
     display: flex;
     padding: 15px;
     width: 350px;
-    animation: formulario 2s;
+    /* animation: formulario 2s; */
 }
 @keyframes formulario{
     0%{transform: translateX(200%)};
@@ -70,7 +76,8 @@ body{
 }
 
 .main-form form{
-    padding: 30px 20px;
+    padding: 10px;
+    width: 100%;
 }
 
 .main-form label{
@@ -91,7 +98,7 @@ body{
     height: 20px;
     margin-bottom: 20px;
     margin-top: 3px;
-    width: 300px;
+    width: 100%;
 }
 .main-form input:focus{
     box-shadow: 3px 3px 5px rgb(116, 85, 85);
@@ -105,10 +112,10 @@ body{
     text-shadow: 1px 1px 5px black;
     font-size: 16px;
     margin: 0 auto;
-    margin-left: calc(50% - 125px);
+    margin-left: 10%;
     margin-top: 10px;
     padding: 7px 35px;
-    width: 250px;
+    width: 80%;
     cursor: pointer;    
 }
 
@@ -118,10 +125,10 @@ body{
     border-radius: 20px;
     color: white;
     font-size: 14px;
-    margin-left: calc(50% - 125px);
+    margin-left: 10%;
     margin-top: 10px;
     padding: 7px 0;
-    width: 250px;
+    width: 80%;
     cursor: pointer;
 }
 .facebook i{
@@ -205,7 +212,12 @@ body{
 
     .content img{
         display: block;
-        margin: 0 auto
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .main-form{
+        width: 80%;
     }
 
 }
