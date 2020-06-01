@@ -149,7 +149,6 @@ a {
     box-shadow: 6px 6px 15px rgb(129, 136, 32);
     margin: 40px auto;
     margin-bottom: -20px;
-
 }
 
 .promo-content {
@@ -459,6 +458,7 @@ hr {
     font-size: 28px;
 }
 
+
 .pagamento h3{
     margin-top: 60px;
     margin-bottom: 25px;
@@ -662,6 +662,15 @@ footer {
 }
 
 
+.radio-pagamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pagamento form{
+    text-align: left;
+}
 
 
 
