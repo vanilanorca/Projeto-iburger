@@ -63,6 +63,7 @@ body{
     display: flex;
     padding: 15px;
     width: 350px;
+    height: 40%;
     animation: formulario 2s;
 }
 @keyframes formulario{
@@ -145,6 +146,18 @@ body{
     background:rgb(25, 114, 17);
     box-shadow: 0 0 5px white;
     transition: .3s;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    color: black;
+    height: 50px;
+    width: 100vw;
+    font-size: 13.5px;
+    background: #eee;
+    text-align: center;
+    padding-top: 10px;
 }
 
 @media (min-width: 1200px){
@@ -234,17 +247,28 @@ body{
     .main-form{
         width: 80%;
     }
-
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    color: black;
-    height: 50px;
-    width: 100vw;
-    font-size: 13.5px;
-    background: #eee;
-    text-align: center;
-    padding-top: 10px;
+@media (max-height: 700px){
+    .logo h1{
+        font-size: 30px;
+    }
+    .main-form h2{
+        display: none;
+    }
+
+    .main-form{
+        margin-top: -30px;
+        height: 300px
+    }
+
+    .facebook{
+        font-size: 12px;
+    }
+
+    footer{
+        height: 40px;
+        font-size: 8px;
+    }
 }
+

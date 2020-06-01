@@ -8,6 +8,7 @@
 
 body {
     background: rgb(24, 2, 2);
+    overflow-x: hidden;
 }
 
 header {
@@ -670,6 +671,12 @@ footer {
 
 .pagamento form{
     text-align: left;
+}
+
+@media (max-width: 460px){
+    .pedir a{
+        font-size: 14px;
+    }
 }
 
 
