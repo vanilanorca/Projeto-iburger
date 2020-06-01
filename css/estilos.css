@@ -42,7 +42,6 @@ a {
 
 .menu li {
     list-style: none;
-    
 }
 
 .menu a {
@@ -52,7 +51,7 @@ a {
     padding: 10px 25px;
     text-decoration: none;
     animation: menu 1.8s;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
 }
 

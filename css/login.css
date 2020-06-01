@@ -7,11 +7,21 @@ body{
     background-image: linear-gradient(to bottom, rgb(24, 2, 2) 50%, rgb(61, 11, 11));
     color: rgb(247, 253, 138);
     height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .logo img{
     display: block;
-    margin: 10px auto;
     animation: imagem 2s;
 }
 @keyframes imagem{
@@ -22,8 +32,9 @@ body{
 .logo h1{
     text-align: center;
     font-family: 'DM Mono', cursive;
-    font-size: 50px;
     margin-top: -50px;
+    margin-bottom: 50px;
+    font-size: 50px;
     text-shadow: 1px 1px 5px rgb(170, 54, 54);
     animation: titulo 2s;
 }
@@ -34,6 +45,8 @@ body{
 
 
 .main-form{
+    align-items: center;
+    align-content: center;
     background: rgb(70, 15, 15);
     border: 1px solid;
     border-radius: 20px;
@@ -41,7 +54,6 @@ body{
     display: flex;
     padding: 15px;
     width: 350px;
-    margin: 50px auto;
     animation: formulario 2s;
 }
 @keyframes formulario{
@@ -126,3 +138,57 @@ body{
     transition: .3s;
 }
 
+@media (min-width: 1200px){
+    body{
+        background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.774) 100%, transparent), url(../imagens/lanche-frontend.jpg);
+        background-size: cover;
+        align-items: flex-end;
+        background-position: center;
+    }
+
+    .content{
+        background: rgb(27, 8, 8);
+        height: 100vh;
+        border-left: 1px solid rgb(90, 25, 25);
+    }
+
+    .main-form{
+        animation: none;
+    }
+
+    .logo h1{
+        animation: title 3s;
+    }
+    @keyframes title{
+        0%{
+            transform: rotate(180deg) translateX(800%);
+        };
+        100%{
+            transform: rotate(0deg);
+        };
+    }
+
+    .logo img{
+        animation: moto 4s;
+    }
+    @keyframes moto{
+        0%{
+            transform: rotate(-180deg) translateX(-800%);
+        };
+        100%{
+            transform: rotate(0deg);
+        };
+    }
+}
+
+@media (min-width: 1600px){
+    .content{
+        width: 600px;
+    }
+}
+
+@media (min-width: 1800px){
+    .content{
+        width: 700px;
+    }
+}
