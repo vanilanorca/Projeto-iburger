@@ -5,15 +5,18 @@
     font-family: 'DM Mono', monospace, Arial, Helvetica, sans-serif;
 } 
 
+html{
+    height: 2000px;
+    overflow: hidden;
+    background-image: linear-gradient(rgb(24, 2, 2) 30%, rgb(61, 11, 11) 70%);
+}
+
 body{
-    background-image: linear-gradient(to bottom, rgb(24, 2, 2), rgb(61, 11, 11)); 
-    background-repeat: no-repeat;
     color: rgb(247, 253, 138);
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
+    
 }
 
 .content{
@@ -149,7 +152,6 @@ body{
 
     .content{
         background: rgb(27, 8, 8);
-        height: 100vh;
         border-left: 1px solid rgb(90, 25, 25);
     }
 
@@ -195,9 +197,6 @@ body{
 }
 
 @media (max-width: 520px){
-    body{
-    }
-
     .content{
         margin: 0 auto;
     }
