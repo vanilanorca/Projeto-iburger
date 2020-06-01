@@ -31,7 +31,7 @@ body{
 
 .logo img{
     display: block;
-    /* animation: imagem 2s; */
+    animation: imagem 2s;
 }
 @keyframes imagem{
     0%{transform: translateY(-100%)};
@@ -45,7 +45,7 @@ body{
     margin-bottom: 50px;
     font-size: 50px;
     text-shadow: 1px 1px 5px rgb(170, 54, 54);
-    /* animation: titulo 2s; */
+    animation: titulo 2s;
 }
 @keyframes titulo{
     0%{transform: translateX(-100%)};
@@ -63,7 +63,7 @@ body{
     display: flex;
     padding: 15px;
     width: 350px;
-    /* animation: formulario 2s; */
+    animation: formulario 2s;
 }
 @keyframes formulario{
     0%{transform: translateX(200%)};
@@ -165,7 +165,7 @@ body{
     }
 
     .logo h1{
-        animation: title 3s;
+        animation: title 2s;
     }
     @keyframes title{
         0%{
@@ -177,7 +177,7 @@ body{
     }
 
     .logo img{
-        animation: moto 4s;
+        animation: moto 2s;
     }
     @keyframes moto{
         0%{
@@ -191,13 +191,28 @@ body{
 
 @media (min-width: 1600px){
     .content{
-        width: 600px;
+        width: 700px;
     }
+
+    .main-form input{
+        height: 30px
+    }
+
+    .main-form{
+        font-size: 20px}
 }
 
 @media (min-width: 1800px){
     .content{
         width: 700px;
+    }
+
+    .main-form input{
+        height: 30px
+    }
+
+    .main-form{
+        font-size: 20px;
     }
 }
 
