@@ -6,10 +6,10 @@
 } 
 
 html{
-    
     background-repeat: no-repeat;
     min-height: 100vh;
-    
+    height: 100vh;
+    overflow: hidden;
 }
 
 body{
@@ -152,12 +152,12 @@ footer {
     position: absolute;
     bottom: 0;
     color: black;
-    height: 50px;
+    height: 35px;
     width: 100vw;
-    font-size: 13.5px;
+    font-size: 10px;
     background: #eee;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 @media (min-width: 1200px){
@@ -269,6 +269,31 @@ footer {
     footer{
         height: 40px;
         font-size: 8px;
+    }
+}
+
+@media (max-height: 870px){
+    .logo{
+        margin-top: -30px;
+    }
+
+    .main-form{
+        margin-top: -30px;
+        height: 48%;
+        margin-bottom: 
+    }
+
+    .main-form input{
+        height: 25px;
+    }
+
+    .facebook{
+        margin-top: 20px;
+        height: 40px;
+    }
+
+    .main-form h2{
+        margin-top: -3%;
     }
 }
 
