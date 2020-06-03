@@ -68,6 +68,26 @@ a {
     100% {transform: translateY();}
 }
 
+.logo{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo img{
+    width: 450px;
+    margin: 0 auto;
+    animation: empinar 5s;
+}
+@keyframes empinar{
+    0%{
+        transform: translateX(-500%) rotate(-90deg);
+    };
+    100%{
+        transform: rotate(0deg);
+    };
+}
+
 .title,
 .subtitle {
     color: rgb(246, 253, 138);
@@ -136,6 +156,10 @@ a {
     .menu a {
         font-size: 20px;
         padding: 15px 115px;
+    }
+
+    .logo img{
+        width: 600px;
     }
 }
 
