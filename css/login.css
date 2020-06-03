@@ -148,7 +148,7 @@ body{
     transition: .3s;
 }
 
-footer {
+footer{
     position: absolute;
     bottom: 0;
     color: black;
@@ -190,16 +190,17 @@ footer {
     }
 
     .logo img{
-        animation: moto 2s;
+        animation: empinar 5s;
     }
-    @keyframes moto{
+    @keyframes empinar{
         0%{
-            transform: rotate(-180deg) translateX(-800%);
+            transform: translateX(-500%) rotate(-90deg);
         };
         100%{
             transform: rotate(0deg);
         };
     }
+    
 }
 
 @media (min-width: 1600px){
@@ -280,7 +281,6 @@ footer {
     .main-form{
         margin-top: -30px;
         height: 48%;
-        margin-bottom: 
     }
 
     .main-form input{
@@ -296,4 +296,3 @@ footer {
         margin-top: -3%;
     }
 }
-
